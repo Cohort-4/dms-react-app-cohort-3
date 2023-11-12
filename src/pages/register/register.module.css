@@ -1,0 +1,132 @@
+.registerContainer {
+  background: #f5f5f2;
+  height: 100vh;
+}
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 15px;
+}
+.logo {
+  width: 2.5rem;
+}
+.logoText {
+  color: #030026;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.register {
+  margin-top: 0.2rem;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 2rem;
+}
+.registerInfoContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.bike {
+  width: 10rem;
+}
+.registerInfoContainer h2 {
+  max-width: 500px;
+  text-align: center;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 40px;
+  font-weight: 500;
+}
+.registerInfoContainer p {
+  max-width: 500px;
+  text-align: center;
+  font-family: DM Sans;
+  font-weight: 400;
+  opacity: 0.4;
+  line-height: 1.5;
+}
+/* Form Section */
+.registerFormContainer {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 3px -5px 40px 0px rgba(205, 205, 212, 0.1);
+}
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.progress {
+  width: 100%;
+  /* border-radius: 3px; */
+  /* color: #053582; */
+}
+.formInfo {
+  color: #393939;
+  font-family: DM Sans;
+}
+.formInfo h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.formInfo p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.inputWrapper input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e2ea;
+  background: #fff;
+}
+.nameInput {
+  display: flex;
+  gap: 0.6rem;
+}
+.nameInput input {
+  width: 100%;
+}
+.passwordWrapper {
+  position: relative;
+}
+.passwordWrapper input {
+  width: 100%;
+}
+.passwordIcon {
+  width: 1.5rem;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+}
+.termCondition {
+  max-width: 500px;
+  /* text-align: justify; */
+  font-size: 16px;
+  font-weight: 400;
+}
+.link {
+  color: blue;
+}
+.account {
+  display: flex;
+  justify-content: space-between;
+}
+.account p {
+  margin-left: 2rem;
+}
+/* Form Section end */
