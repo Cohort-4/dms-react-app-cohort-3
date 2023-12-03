@@ -2,10 +2,18 @@ import styles from "./register.module.css";
 import Logo from "../../images/logo.png";
 import BikeMan from "../../images/bike.png";
 import PasswordIcon from "../../images/eye1.png";
+import PasswordIconClose from "../../images/eye-close.png";
 import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Register = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasword = () => {
+    setShowPassword(prev => !prev);
+  };
+
   return (
     <div className={styles.registerContainer}>
       <div className={styles.logoWrapper}>
@@ -27,7 +35,7 @@ const Register = () => {
         <div className={styles.registerFormContainer}>
           <form className={styles.formWrapper}>
             <progress className={styles.progress} max="100" value="70">
-              70
+              70%
             </progress>
             <div className={styles.formInfo}>
               <h2>Basic Information</h2>
@@ -46,12 +54,26 @@ const Register = () => {
                 required
               />
               <div className={styles.passwordWrapper}>
-                <input type="password" placeholder="Password" required />
-                <img
-                  className={styles.passwordIcon}
-                  src={PasswordIcon}
-                  alt="password icon"
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Password"
+                  required
                 />
+                {showPassword ? (
+                  <img
+                    className={styles.passwordIcon}
+                    src={PasswordIcon}
+                    alt="password icon"
+                    onClick={togglePasword}
+                  />
+                ) : (
+                  <img
+                    className={styles.passwordIconClose}
+                    src={PasswordIconClose}
+                    alt="password icon"
+                    onClick={togglePasword}
+                  />
+                )}
               </div>
             </div>
             <p className={styles.termCondition}>

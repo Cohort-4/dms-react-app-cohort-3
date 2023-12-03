@@ -67,8 +67,6 @@
 }
 .progress {
   width: 100%;
-  /* border-radius: 3px; */
-  /* color: #053582; */
 }
 .formInfo {
   color: #393939;
@@ -112,6 +110,14 @@
   top: 8px;
   right: 10px;
   cursor: pointer;
+}
+.passwordIconClose{
+  width: 1.2rem;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+  opacity: .4;
 }
 .termCondition {
   max-width: 500px;

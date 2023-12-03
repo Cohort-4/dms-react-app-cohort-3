@@ -1,13 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Register from "./pages/register/Register";
-import Login from "./pages/login/Login";
-import Dashboard from "./pages/dashboard/Dashboard";
+import { Login, Register, Dashboard } from "./pages/index";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index path="/register" element={<Register />} />
+        <Route index path="/" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
