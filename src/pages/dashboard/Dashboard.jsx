@@ -110,22 +110,20 @@ const Dashboard = () => {
       <section className={styles.mainContainer}>
         <section className={styles.navbarContainer}>
           <div className={styles.searchContainer}>
-            <img src={SearchIcon} alt="" />
+            <img src={SearchIcon} alt="search icon" />
             <input type="search" placeholder="Search" />
           </div>
           <div className={styles.userProfile}>
-            <div className={styles.userAvatar}>
-              <img src={UserAvatar} alt="user avatar" />
-            </div>
+              <img src={UserAvatar} alt="user avatar" className={styles.userAvatar} />
             <div className={styles.userInfo}>
-              <span>Jude Adam</span>
-              <small>Admin</small>
+              <span className={styles.username}>Jude Adam</span>
+              <span className={styles.role}>Admin</span>
             </div>
           </div>
         </section>
 
         <section className={styles.dashboardAnalysis}>
-          <h3>Dashboard</h3>
+          <h1 className={styles.dashbaordTitle}>Dashboard</h1>
           <div className={styles.dashboardWrapper}>
             <div className={styles.leftContainer}>
               <div className={styles.card}>
@@ -151,21 +149,21 @@ const Dashboard = () => {
             </div>
             <div className={styles.rightContainer}>
               <div className={styles.toprightContainer}>
-                <div className={styles.topRightOne}>
+                <div className={`${styles.topRightOne} ${styles.flexItem}`}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
                   expedita neque consequuntur delectus quis consequatur?
                 </div>
-                <div className={styles.topRightTwo}>
+                <div className={`${styles.topRightTwo} ${styles.flexItem}`}>
                   <AreaChart />
                 </div>
               </div>
               <div className={styles.bottomrightContainer}>
-                <div className={styles.bottomRightOne}>
+                <div className={`${styles.bottomRightOne} ${styles.flexItem}`}>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Illum, soluta voluptatum. Aspernatur quaerat laboriosam
                   voluptates?
                 </div>
-                <div className={styles.bottomRightTwo}>
+                <div className={`${styles.bottomRightTwo} ${styles.flexItem}`}>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
                   ullam, possimus ex recusandae hic nesciunt!
                 </div>
