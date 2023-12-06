@@ -21,7 +21,7 @@
 .register {
   margin-top: 0.2rem;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
 }
@@ -31,24 +31,25 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: 1rem;
 }
 .bike {
   width: 10rem;
 }
-.registerInfoContainer h2 {
+.registerInfo {
   max-width: 500px;
   text-align: center;
+  font-family: "DM Sans";
+}
+.registerInfoContainer h2 {
   color: #000;
-  font-family: DM Sans;
-  font-size: 40px;
+  font-family: "DM Sans";
+  font-size: 35px;
   font-weight: 500;
 }
 .registerInfoContainer p {
-  max-width: 500px;
-  text-align: center;
-  font-family: DM Sans;
   font-weight: 400;
+  margin: .6rem 0rem;
   opacity: 0.4;
   line-height: 1.5;
 }
@@ -70,7 +71,7 @@
 }
 .formInfo {
   color: #393939;
-  font-family: DM Sans;
+  font-family: "DM Sans";
 }
 .formInfo h2 {
   font-size: 28px;
@@ -111,19 +112,18 @@
   right: 10px;
   cursor: pointer;
 }
-.passwordIconClose{
+.passwordIconClose {
   width: 1.2rem;
   position: absolute;
   top: 8px;
   right: 10px;
   cursor: pointer;
-  opacity: .4;
+  opacity: 0.4;
 }
-.termCondition {
-  max-width: 500px;
-  /* text-align: justify; */
-  font-size: 16px;
-  font-weight: 400;
+.forgotPasswordLink {
+  align-self: end;
+  color: blue;
+  margin-bottom: 2rem;
 }
 .link {
   color: blue;

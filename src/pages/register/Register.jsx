@@ -11,7 +11,7 @@ const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasword = () => {
-    setShowPassword(prev => !prev);
+    setShowPassword((prev) => !prev);
   };
 
   return (
@@ -24,12 +24,14 @@ const Register = () => {
       <div className={styles.register}>
         <div className={styles.registerInfoContainer}>
           <img src={BikeMan} alt="bike man" className={styles.bike} />
-          <h2>Let’s help you manage your riders and delivery systems.</h2>
-          <p>
-            Every logistics company whether it’s a multi-national branding
-            corporation or a regular local deserves the basic standard
-            necessities in achieving a high service delivery
-          </p>
+          <div className={styles.registerInfo}>
+            <h2>Let’s help you manage your riders and delivery systems.</h2>
+            <p>
+              Every logistics company whether it’s a multi-national branding
+              corporation or a regular local deserves the basic standard
+              necessities in achieving a high service delivery
+            </p>
+          </div>
           <Button url="/register" text="Get Started" />
         </div>
         <div className={styles.registerFormContainer}>
