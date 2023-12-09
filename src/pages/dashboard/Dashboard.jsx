@@ -114,7 +114,14 @@ const Dashboard = () => {
             <input type="search" placeholder="Search" />
           </div>
           <div className={styles.userProfile}>
-              <img src={UserAvatar} alt="user avatar" className={styles.userAvatar} />
+            <div className={styles.avatarWrapper}>
+              <img
+                src={UserAvatar}
+                alt="user avatar"
+                className={styles.userAvatar}
+              />
+              <span className={styles.indicator}></span>
+            </div>
             <div className={styles.userInfo}>
               <span className={styles.username}>Jude Adam</span>
               <span className={styles.role}>Admin</span>

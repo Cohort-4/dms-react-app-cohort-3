@@ -40,7 +40,7 @@ const Register = () => {
               70%
             </progress>
             <div className={styles.formInfo}>
-              <h2>Basic Information</h2>
+              <h3>Basic Information</h3>
               <p>Enter the following information below</p>
             </div>
             <div className={styles.inputWrapper}>

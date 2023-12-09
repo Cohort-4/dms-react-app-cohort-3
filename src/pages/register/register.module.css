@@ -1,6 +1,5 @@
 .registerContainer {
-  background: #f5f5f2;
-  height: 100vh;
+  height: 100dvh;
 }
 .logoWrapper {
   display: flex;
@@ -19,14 +18,15 @@
   letter-spacing: 5px;
 }
 .register {
-  margin-top: 0.2rem;
+  margin-top: 2rem;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
+  gap: 3rem;
+  padding: 2.5rem;
 }
 .registerInfoContainer {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,19 +49,24 @@
 }
 .registerInfoContainer p {
   font-weight: 400;
-  margin: .6rem 0rem;
+  margin: 0.6rem 0rem;
   opacity: 0.4;
   line-height: 1.5;
 }
 /* Form Section */
 .registerFormContainer {
-  flex: 1;
+  max-width: 520px;
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
   border-radius: 20px;
   background: #fff;
   box-shadow: 3px -5px 40px 0px rgba(205, 205, 212, 0.1);
 }
 .formWrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -71,13 +76,14 @@
 }
 .formInfo {
   color: #393939;
-  font-family: DM Sans;
+  margin-bottom: 1rem;
 }
-.formInfo h2 {
+.formInfo h3 {
   font-size: 28px;
   font-weight: 700;
 }
 .formInfo p {
+  margin-top: 0.8rem;
   font-size: 12px;
   font-weight: 400;
 }
@@ -112,19 +118,20 @@
   right: 10px;
   cursor: pointer;
 }
-.passwordIconClose{
+.passwordIconClose {
   width: 1.2rem;
   position: absolute;
   top: 8px;
   right: 10px;
   cursor: pointer;
-  opacity: .4;
+  opacity: 0.4;
 }
 .termCondition {
   max-width: 500px;
   /* text-align: justify; */
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 .link {
   color: blue;
@@ -132,8 +139,40 @@
 .account {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .account p {
   margin-left: 2rem;
 }
 /* Form Section end */
+
+/* responsive */
+@media (max-width: 1040px) {
+  .registerInfoContainer h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 900px) {
+  .register {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nameInput {
+    flex-direction: column;
+  }
+  .termCondition {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .account {
+    flex-direction: column;
+  }
+  .account p {
+    margin-bottom: 1.5rem;
+  }
+  .registerFormContainer {
+    width: 100%;
+  }
+}

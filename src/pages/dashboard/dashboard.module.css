@@ -77,9 +77,22 @@
   gap: 0.4rem;
   cursor: pointer;
 }
-.userAvatar{
+.avatarWrapper {
+  position: relative;
+}
+.userAvatar {
   width: 45px;
   height: 45px;
+}
+.indicator {
+  width: 12px;
+  height: 12px;
+  background: #34b53a;
+  border-radius: 50%;
+  padding: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .userInfo {
   /* display: flex;
@@ -178,6 +191,12 @@
 }
 @media (max-width: 768px) {
   .text {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+ .sidebarContainer{
     display: none;
   }
 }

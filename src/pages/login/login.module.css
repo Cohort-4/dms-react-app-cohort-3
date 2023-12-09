@@ -19,14 +19,15 @@
   letter-spacing: 5px;
 }
 .register {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
+  gap: 3rem;
+  padding: 2.5rem;
 }
 .registerInfoContainer {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,13 +50,17 @@
 }
 .registerInfoContainer p {
   font-weight: 400;
-  margin: .6rem 0rem;
+  margin: 0.6rem 0rem;
   opacity: 0.4;
   line-height: 1.5;
 }
 /* Form Section */
 .registerFormContainer {
-  flex: 1;
+  max-width: 600px;
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
   border-radius: 20px;
   background: #fff;
@@ -131,8 +136,47 @@
 .account {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
 }
 .account p {
   margin-left: 2rem;
 }
 /* Form Section end */
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .register {
+    flex-direction: column;
+    /* padding: 1rem; */
+  }
+  .forgotPasswordLink{
+    align-self: center;
+  }
+}
+@media (max-width: 600px) {
+  .nameInput {
+    flex-direction: column;
+  }
+  .left-hero-title {
+    font-size: 20px;
+  }
+  .termCondition {
+    font-size: 0.85rem;
+  }
+  .account {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .register {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 300px) {
+  .registerFormContainer {
+    padding: 30px;
+  }
+}
